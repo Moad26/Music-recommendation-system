@@ -29,7 +29,8 @@ dependencies = [
   "unidecode>=1.4.0",
   "xgboost[cuda]>=3.1.0",
 ]
-
+[tool.uv]
+dev-dependencies = ["pytest", "pytest-mock", "pytest-cov", "ruff"]
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["src*"]
